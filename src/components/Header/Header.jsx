@@ -6,8 +6,8 @@ function Header({ setSelectedFile }) {
     return (
         <header className="header">
             <div className="header__container">
-                <OpenButton setSelectedFile={setSelectedFile}/>
                 <h1 className="header__title">Лабораторная работа №1</h1>
+                <OpenButton setSelectedFile={setSelectedFile}/>
             </div>
         </header>
     )
