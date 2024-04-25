@@ -1,0 +1,9 @@
+.canvas__container {
+    display: flex;
+    overflow-y: auto;
+    justify-content: center;
+    flex: 1;
+}
+
+.canvas {
+}

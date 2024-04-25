@@ -1,0 +1,35 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.color-date__color-preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.footer__color-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer__cursor-position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
