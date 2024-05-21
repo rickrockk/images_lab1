@@ -1,0 +1,13 @@
+.image-change__form {
+    padding: 1rem;
+}
+
+.form__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+}

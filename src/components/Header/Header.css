@@ -1,12 +1,11 @@
 .header {
-    padding: 0 15px;
+    padding: 0.5rem 2.5rem;
 }
 
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e0e0e0;
     background: white;
 }
 
@@ -15,4 +14,16 @@
     font-weight: 600;
     color: #000;
 }
+
+.header__controls {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+
+.header__control:not(:first-of-type) {
+    margin-left: 1.5rem;
+}
+
 

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './OpenButton.css';
 
-function OpenButton({ setSelectedFile }) {
+function OpenButton({setSelectedImage}) {
     const inputRef = useRef(null);
     const handleClick = () => {
         inputRef.current.click();
@@ -9,7 +9,12 @@ function OpenButton({ setSelectedFile }) {
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
-        setSelectedFile(file);
+
+        const image = new Image();
+        image.src = URL.createObjectURL(file)
+        image.onload = () => {
+            setSelectedImage(image)
+        }
     }
 
     return (
@@ -19,7 +24,7 @@ function OpenButton({ setSelectedFile }) {
                 type="file"
                 onChange={handleFileChange}
             />
-            <button className="button" onClick={handleClick}>Загрузить изображение </button>
+            <button className="button" onClick={handleClick}>Выбрать фото</button>
         </div>
     )
 }
